@@ -19,4 +19,5 @@ class EmailConfig
     const MAIL_ENCRYPTION = "ssl";
     const MAIL_FROM_ADDRESS = "dev@meiquick.com";
     const MAIL_FROM_NAME = "meiquick";
+    const MAIL_CHARSET = "UTF-8";
 }

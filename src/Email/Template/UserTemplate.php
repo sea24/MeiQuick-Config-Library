@@ -13,8 +13,16 @@ class UserTemplate implements TemplateInterface
 {
     public function template(array $subjectFill = [], array $bodyFill = []): array
     {
-        $subject = 'Hi! Here is the verification code';
-        $body = "Hi! The verification code is: <b>%s</b>";
+        $subject = 'Hello,%s';
+        if ($subjectFill) {
+            $subject = sprintf($subject, ...$subjectFill);
+        }
+        $body = "Here is your verification code:<b>%s</b><br/>
+                -The code expires in 30mins.<br/>
+                -You are applying to register as an Meiquick user.<br/>
+                -Please don’t share this code with anyone else.<br/>
+                Enjoy!<br/>
+                美快国际转运 www.meiquick.com";
         if ($bodyFill) {
             $body = sprintf($body, ...$bodyFill);
         }
