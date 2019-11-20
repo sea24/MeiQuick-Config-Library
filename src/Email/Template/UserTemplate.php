@@ -19,7 +19,6 @@ class UserTemplate implements TemplateInterface
         }
         $body = "Here is your verification code:<b>%s</b><br/>
                 -The code expires in 30mins.<br/>
-                -You are applying to register as an Meiquick user.<br/>
                 -Please don’t share this code with anyone else.<br/>
                 Enjoy!<br/>
                 美快国际转运 www.meiquick.com";

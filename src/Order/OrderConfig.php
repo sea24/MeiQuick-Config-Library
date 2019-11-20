@@ -91,6 +91,46 @@ class OrderConfig
     // 锁定
     const LOCK_ACTIVE = 2;
 
+    /*长短装状态*/
+    // 正常
+    const SURPLUS_STATE_NORMAL = 0;
+    // 长装
+    const SURPLUS_STATE_LONG = 1;
+    // 短装
+    const SURPLUS_STATE_SHORT = 2;
+    
+    /*理赔状态*/
+    // 正常
+    const CLAIMS_NORMAL = 1;
+    // 理赔申请中
+    const CLAIMS_APPLY = 2;
+    // 已理赔
+    const CLAIMS_COMPLETE = 3;
+
+    /*退件状态*/
+    // 正常
+    const RETURN_NORMAL = 1;
+    // 退件申请中
+    const RETURN_APPLY = 2;
+    // 已退件
+    const RETURN_COMPLETE = 3;
+
+    /*审核问题状态*/
+    // 正常
+    const AUDIT_NORMAL = 1;
+    // 包裹商品少件审核不通过
+    const AUDIT_LESS = 2;
+    // 包裹商品多件审核不通过
+    const AUDIT_MORE = 3;
+    // 包裹商品信息不符审核不通
+    const AUDIT_INCOMPATIBLE = 4;
+    // 包裹商品含违禁品审核不通过
+    const AUDIT_VIOLATION = 5;
+    // 包裹商品损坏审核不通过
+    const AUDIT_BREAK = 6;
+    // 商品凭证缺失审核不通过
+    const AUDIT_LACK = 7;
+
 
     /*路单状态*/
     // 未录入
@@ -104,11 +144,23 @@ class OrderConfig
     // 已拆包
     const LADING_BREAKED = 4;
 
+    /*路单完成状态 is_finish */
+    // 正常
+    const LADING_FINISH_FALSE = 0;
+    // 已完成
+    const LADING_FINISH_TRUE = 1;
+
     /*站点类型*/
     // 国内
     const STATION_INSIDE = 1;
     // 国外
     const STATION_OUTSIDE = 2;
+
+    /*派送方式*/
+    // 自取
+    const DELIVERY_SELF = 1;
+    // 送货上门
+    const DELIVERY_DISPATCH = 2;
 
 
     /*********************************************** 包裹查询 ******************************************************/
