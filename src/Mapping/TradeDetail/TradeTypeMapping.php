@@ -9,6 +9,8 @@
 namespace MeiQuick\Config\Library\Mapping\TradeDetail;
 
 
+use MeiQuick\Config\Library\Mapping\MapTrait;
+
 /**
  * trade_detail table trade_type field mapping relation
  * Class TradeType
@@ -16,6 +18,8 @@ namespace MeiQuick\Config\Library\Mapping\TradeDetail;
  */
 class TradeTypeMapping
 {
+    use MapTrait;
+
     const MAP_EN = [
         self::RECHARGE => 'recharge',
         self::CONSUME => 'consume',
@@ -34,4 +38,11 @@ class TradeTypeMapping
     const CONSUME = 2;
     const REFUND = 3;
     const FILL_BUCKLE = 4;
+
+    const MAP = [
+        self::RECHARGE,
+        self::CONSUME,
+        self::REFUND,
+        self::FILL_BUCKLE
+    ];
 }

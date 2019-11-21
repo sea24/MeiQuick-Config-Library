@@ -8,6 +8,8 @@
 
 namespace MeiQuick\Config\Library\Mapping\RechargeRecord;
 
+use MeiQuick\Config\Library\Mapping\MapTrait;
+
 /**
  * recharge_record table pay_status field mapping relation
  * Class PayStatusMapping
@@ -15,6 +17,8 @@ namespace MeiQuick\Config\Library\Mapping\RechargeRecord;
  */
 class PayStatusMapping
 {
+    use MapTrait;
+
     const MAP_EN = [
         self::NON_PAY => 'non-payment',
         self::PAID => 'paid'
@@ -27,4 +31,9 @@ class PayStatusMapping
 
     const NON_PAY = 0;
     const PAID = 1;
+
+    const MAP = [
+        self::NON_PAY,
+        self::PAID
+    ];
 }

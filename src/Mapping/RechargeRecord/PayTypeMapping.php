@@ -8,6 +8,8 @@
 
 namespace MeiQuick\Config\Library\Mapping\RechargeRecord;
 
+use MeiQuick\Config\Library\Mapping\MapTrait;
+
 /**
  * recharge_record table pay_type field mapping relation
  * Class PayTypeMapping
@@ -15,10 +17,12 @@ namespace MeiQuick\Config\Library\Mapping\RechargeRecord;
  */
 class PayTypeMapping
 {
+    use MapTrait;
+
     // 支付类型映射-英文
     const MAP_EN = [
-        self::ALI_PAY => 'ali_pay',
-        self::WX_PAY => 'wx_pay',
+        self::ALI_PAY => 'ali pay',
+        self::WX_PAY => 'wechat pay',
     ];
 
     // 支付类型映射-中文
@@ -31,4 +35,8 @@ class PayTypeMapping
     const ALI_PAY = 1;
     const WX_PAY = 2;
 
+    const MAP = [
+        self::ALI_PAY,
+        self::WX_PAY
+    ];
 }

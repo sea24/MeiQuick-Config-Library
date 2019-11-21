@@ -9,6 +9,8 @@
 namespace MeiQuick\Config\Library\Mapping\TradeDetail;
 
 
+use MeiQuick\Config\Library\Mapping\MapTrait;
+
 /**
  * trade_detail table pay_type field mapping relation
  * Class TradeType
@@ -16,6 +18,8 @@ namespace MeiQuick\Config\Library\Mapping\TradeDetail;
  */
 class PayTypeMapping
 {
+    use MapTrait;
+
     const MAP_EN = [
         self::BALANCE => 'balance',
         self::ALIPAY => 'alipay',
@@ -31,4 +35,10 @@ class PayTypeMapping
     const BALANCE = 1;
     const ALIPAY = 2;
     const WXPAY = 3;
+
+    const MAP = [
+        self::BALANCE,
+        self::ALIPAY,
+        self::WXPAY
+    ];
 }

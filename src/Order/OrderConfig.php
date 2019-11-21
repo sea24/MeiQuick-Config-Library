@@ -161,33 +161,5 @@ class OrderConfig
     const DELIVERY_SELF = 1;
     // 送货上门
     const DELIVERY_DISPATCH = 2;
-
-
-    /*********************************************** 包裹查询 ******************************************************/
-    // 运输状态
-    const TRAVEL_STATE_MATCH = [
-        '1' => self::TRAVEL_STATE_UNSTORAGE,
-        '2' => self::TRAVEL_STATE_TRANSPORT,
-        '3' => self::TRAVEL_STATE_WAIT_FOR_HANDLE,
-        '4' => self::TRAVEL_STATE_FINISHED
-    ];
-    // 订单状态
-    const ORDER_STATE_MATCH = [
-        '1' => self::ORDER_STATE_NORMAL,
-        '2' => self::ORDER_STATE_FINISH,
-        '3' => self::ORDER_STATE_AUDIT_FAILED,
-        '4' => self::ORDER_STATE_WAIT_FOR_PAYMENT,
-        '5' => self::ORDER_STATE_CANCELLED,
-        '6' => self::ORDER_STATE_RETURNING,
-        '7' => self::ORDER_STATE_RETURNED
-    ];
-    // 物流状态
-    const EXPRESS_STATE_MATCH = [
-        '1' => self::EXPRESS_STATE_UNSTORAGE,
-        '2' => self::EXPRESS_STATE_STORAGED,
-        '3' => self::EXPRESS_STATE_WAIT_FOR_OUTBOUND,
-        '4' => self::EXPRESS_STATE_OUTBOUND,
-        '5' => self::EXPRESS_STATE_ARRIVED,
-        '6' => self::EXPRESS_STATE_SIGNED
-    ];
+    
 }
