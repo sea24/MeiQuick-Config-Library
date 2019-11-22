@@ -23,7 +23,7 @@ class OrderConfig
     // 已退件
     const ORDER_STATE_RETURNED = 7;
 
-    /* 惭怍状态 */
+    /* 操作状态 */
     // 待收件
     const OPERATION_STATE_UNRECEIVE = 0;
     // 已收件
@@ -56,6 +56,8 @@ class OrderConfig
     const EXPRESS_STATE_ARRIVED = 40;
     // 待签收
     const EXPRESS_STATE_SIGNED = 50;
+    // 已派送
+    const EXPRESS_STATE_DELIVERY = 60;
 
     /* 运输状态 */
     // 待入库
