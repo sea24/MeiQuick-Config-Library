@@ -143,8 +143,10 @@ class OrderConfig
     const LADING_OUTBOUND = 2;
     // 已接收
     const LADING_COLLECTED = 3;
+    // 已结束
+    const LADING_FINISHED = 4;
     // 已拆包
-    const LADING_BREAKED = 4;
+    const LADING_BREAKED = 5;
 
     /*路单完成状态 is_finish */
     // 正常
