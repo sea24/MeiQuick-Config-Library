@@ -36,12 +36,18 @@ class OrderConfig
     const OPERATION_STATE_PAID = 40;
     // 已打印面单
     const OPERATION_STATE_PRINTED = 50;
-    // 已分拣（等待发航空）
+    // 已录入路单
     const OPERATION_STATE_ENTRY_LADING = 60;
+    // 已出库
+    const OPERATION_STATE_OUTBOUND = 65;
     // 已接收
     const OPERATION_STATE_COLLECTED = 70;
-    // 已出仓
-    const OPERATION_STATE_TRANSFER = 80;
+    // 已签收
+    const OPERATION_STATE_SIGNED = 80;
+    // 已派送
+    const OPERATION_STATE_DELIVERY = 90;
+    // 已结束
+    const OPERATION_STATE_OVER = 100;
 
     /* 物流节点信息 */
     // 待入库
